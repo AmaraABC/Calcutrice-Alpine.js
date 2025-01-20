@@ -16,16 +16,16 @@ Ce projet est une calculatrice réalisée dans un fichier HTML, puis stylisée a
 
 ## Description du code source du projet :
 
-**HTML5**
+### **HTML5**
 
-### **Balise _<head>_ du fichier [index.html](index.html) :**
+#### **Balise _head_ du fichier [index.html](index.html) :**
 
 - Inclusion d'une première balise _<script></script>_ pour utiliser le framework
-[***Alpine.js***](alpine.dev) ;
+[***Alpine.js***](https://alpinejs.dev) ;
 
 - Inclusion d'une balise _<link>_ pour implémenter une feuille de style en **CSS**
 
-### **Balise _<body>_ du fichier [index.html](index.html) :**
+#### **Balise _body_ du fichier [index.html](index.html) :**
 
 - Nouvelle balise _<script></script>_ pour définir les fonctionnalités de la calculatrice en **JavaScript** à travers une fonction nommée "calculator". Au sein de cette fonction, nous retrouvons des fonctionnalités pour :
     - Afficher la valeur du bouton sur lequel l'utilisateur a appuyé à l'écran ;
@@ -36,7 +36,7 @@ Ce projet est une calculatrice réalisée dans un fichier HTML, puis stylisée a
     - Un _<input>_ qui fait office d'écran pour la calculatrice ;
     - Une _div_ qui regroupe tous les boutons de la calculatrice. Ces boutons ont la particularité d'effectuer une action par rapport à la fonctionnalité qui lui a été assignée.
 
-**CSS**
+### **CSS**
 
 - Stylisation de la calculatrice dans sa globalité avec le fichier [style.css](style.css) :
     - Nouvelle police d'écriture pour les éléments de la calculatrice (boutons, input, ...) ;
