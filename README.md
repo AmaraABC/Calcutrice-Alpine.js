@@ -21,7 +21,7 @@ Ce projet est une calculatrice réalisée dans un fichier HTML, puis stylisée a
 ### **Balise _head_ du fichier [index.html](index.html) :**
 
 - Inclusion d'une première balise _<script></script>_ pour utiliser le framework
-[***Alpine.js***](alpine.dev) ;
+[***Alpine.js***](https://alpinejs.dev) ;
 
 - Inclusion d'une balise _<link>_ pour implémenter une feuille de style en **CSS**
 
