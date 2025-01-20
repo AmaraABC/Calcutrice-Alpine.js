@@ -32,13 +32,13 @@ Ce projet est une calculatrice réalisée dans un fichier HTML, puis stylisée a
     - Effacer la/les valeur(s) présente(s) sur l'écran ;
     - Afficher le résultat du calcul ou un message d'erreur.
 
-- Définition d'une _<div>_ contenant les éléments pour "matérialiser" la calculatrice :
+- Définition d'une _div_ contenant les éléments pour "matérialiser" la calculatrice :
     - Un _<input>_ qui fait office d'écran pour la calculatrice ;
-    - Une _<div>_ qui regroupe tous les boutons de la calculatrice. Ces boutons ont la particularité d'effectuer une action par rapport à la fonctionnalité qui lui a été assignée.
+    - Une _div_ qui regroupe tous les boutons de la calculatrice. Ces boutons ont la particularité d'effectuer une action par rapport à la fonctionnalité qui lui a été assignée.
 
 **CSS**
 
-- Stylisation de la calculatrice dans sa globalité avec le fichier [style.css](style.css):
+- Stylisation de la calculatrice dans sa globalité avec le fichier [style.css](style.css) :
     - Nouvelle police d'écriture pour les éléments de la calculatrice (boutons, input, ...) ;
     - Une nouvelle palette de couleur pour la calculatrice et ses éléments ;
     - Une disposition plus convenable et appropriée (calculatrice placée au centre de la page, des touches bien alignées avec des dimensions adaptées, ...) ;
