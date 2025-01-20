@@ -1,0 +1,82 @@
+/*-- Implémentation d'une nouvelle police d'écriture --*/
+@font-face {
+    font-family: 'Pricedown';
+    src: url(./pricedown/pricedown\ bl.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pricedown';
+}
+
+body {
+    background-color: rgb(234, 224, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/*-- Les touches de la calculatrice --*/
+
+button {
+    cursor: pointer;
+    width: 90px;
+    height: 90px;
+    border: 1px solid rgb(17, 2, 37);
+    border-radius: 50%;
+    background-color: rgb(35, 15, 62);
+    color: gold;
+    font-size: 2.5rem;
+    padding-bottom: .17em;
+}
+
+/*-- Classes : Opérations --*/
+
+.operations {
+    background-color: rgba(58, 25, 112, 0.511);
+    border: 1.5px solid rgb(23, 3, 50);
+}
+
+/*-- Les IDs --*/
+
+#calculate {
+    max-width: 460px;
+    background-color: rgb(25, 7, 50);
+    border-radius: .95em;
+    overflow: hidden;
+}
+
+#request {
+    width: 100%;
+    font-size: 4rem;
+    color: gold;
+    border: none;
+    padding-left: .2em;
+    background-color: rgb(35, 15, 62);
+    outline: none;
+}
+
+#values-elem {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .7em;
+    padding: 1.2em;
+}
+
+/*-- Petites animations --*/
+
+button:hover {
+    background-color: gold;
+    color: rgb(14, 14, 50);
+    transition: .5s;
+}
+
+button:active {
+    background-color: rgb(14, 19, 50);
+}
+
+#request::selection {
+    color: white;
+}
