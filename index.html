@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr-FR" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+    <!--Framework Alpine.js-->
+    <script src="https://unpkg.com/alpinejs" defer></script>
+
+    <!--Feuille de style CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>Calculatrice avec Framework Alpine.js</title>
+</head>
+<body>
+
+    <!-- Fonctionnalités de la calculatrice - JavaScript -->
+    <script>
+        function calculator() {
+            return {
+                operators(input) {
+                    request.value += input;
+                },
+
+                clear() {
+                    request.value = "";
+                },
+
+                showResults() {
+                    try {
+                        request.value = eval(request.value);
+                    }
+                    catch (error) {
+                        request.value = "Impossible !!";
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Div contenant l'ensemble de la calculatrice -->
+    <div id="calculate" x-data="calculator()">
+
+        <!-- Input pour la saisie du calcul à effectuer -->
+        <input id="request" type="text" placeholder="..." x-model="input">
+
+        <!-- Div contenant les touches de la calculatrice -->
+        <div id="values-elem">
+            <button @click="operators('+')" class="operations">+</button>
+            <button @click="operators('9')">9</button>
+            <button @click="operators('8')">8</button>
+            <button @click="operators('7')">7</button>
+            <button @click="operators('-')" class="operations">-</button>
+            <button @click="operators('6')">6</button>
+            <button @click="operators('5')">5</button>
+            <button @click="operators('4')">4</button>
+            <button @click="operators('*')" class="operations">*</button>
+            <button @click="operators('3')">3</button>
+            <button @click="operators('2')">2</button>
+            <button @click="operators('1')">1</button>
+            <button @click="operators('/')" class="operations">/</button>
+            <button @click="operators('0')">0</button>
+            <button @click="operators('.')">,</button>
+            <button @click="showResults()">=</button>
+            <button @click="clear()" class="operations">C</button>
+        </div>       
+    </div>
+</body>
+</html>
